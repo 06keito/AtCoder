@@ -1,9 +1,4 @@
-import sys
-import os
-import shutil
-f = open('input.txt', 'r')
-sys.stdin = f
-#--------------------------
+#https://atcoder.jp/contests/abc136/tasks/abc136_d
 
 S = str(input())+"R"
 
@@ -23,11 +18,3 @@ for i in range(len(S)-1):
         count = 0
 
 print(' '.join(map(str,li[:len(S)-1])))
-
-
-#--------------------------
-filename = 'ABC136_D.py'#ファイルネームを書いてくれ
-out = open(filename,"w")
-shutil.copy("code.py",filename)
-out.close()
-f.close()
